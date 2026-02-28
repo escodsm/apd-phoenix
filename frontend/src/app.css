@@ -1,0 +1,364 @@
+/* ----------------------------------------
+   \m/ - AnchorPoint Digital – \m/
+   Author: Steve Cordeiro
+   ---------------------------------------- */
+
+:root {
+    --blue-dark: #0a192f;
+    --blue-light: #123a5d;
+    --accent-gold: #f9c74f;
+    --text-light: #e6f1ff;
+    --text-muted: #a8b2d1;
+    --max-width: 1100px;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background-color: var(--blue-dark);
+    color: var(--text-light);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* HERO SECTION ------------------------------------------ */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--blue-dark) 30%, var(--blue-light));
+    padding: 4rem 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -84%;
+    width: 200%;
+    height: 100%;
+    /*background: radial-gradient(circle at 90% 40%, rgba(135, 135, 135, 1.6), transparent 20%);*/
+    pointer-events: none;
+    /*animation: pulseGlow 1.4s infinite alternate;*/
+}
+
+@keyframes pulseGlow {
+    from {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0.8;
+        transform: scale(1.87);
+    }
+}
+
+#widget-root {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* behind text */
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10; /* above the React component */
+}
+
+.hero-content {
+    max-width: var(--max-width);
+    z-index: 2;
+    text-align: left;
+    animation: fadeInUp 1s ease both;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column; /* stack h3 + paragraphs vertically */
+    gap: 1rem; /* optional spacing between elements */
+    max-width: var(--max-width);
+    z-index: 2;
+}
+
+.hero-content h3 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--accent-gold);
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+/* Gold underline animation for hero title */
+.hero-content h3 {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 8px;
+    color: var(--text-light);
+    font-weight: 700;
+}
+
+.hero-content h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent-gold), #ffd166);
+    border-radius: 2px;
+    transform: translateX(-50%);
+    transition: width 0.9s ease;
+    opacity: 0.9;
+}
+
+.hero-content h3.visible::after {
+    width: 90%;
+}
+
+.hero-content p {
+    opacity: 0;
+    transform: translateY(12px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+    display: inline-block;
+}
+
+.hero-content p.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hero-content p .pipe {
+    opacity: 0;
+    transform: translateY(6px);
+    display: inline-block;
+    transition:
+        opacity 0.4s ease,
+        transform 0.4s ease;
+}
+
+.hero-content p .pipe.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 0.4rem;
+}
+
+/* Make second paragraph in hero-content gold */
+.hero-content p:nth-of-type(2) {
+    color: var(--accent-gold);
+}
+
+.hero-subtitle {
+    color: var(--accent-gold);
+}
+
+.pipe {
+    color: var(--accent-gold);
+    padding: 0 0.4rem;
+}
+
+/* SECTION STYLES ---------------------------------------- */
+
+section {
+    padding: 4rem 1.5rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+section:nth-of-type(even) {
+    background-color: var(--blue-light);
+}
+
+section h2 {
+    font-size: 2rem;
+    color: var(--accent-gold);
+    text-align: center;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1; /* ensure pseudo-element sits under text properly */
+    padding-bottom: 10px; /* give space for the underline */
+}
+
+/* Animated gold underline for section headings (drop-in) */
+
+section h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent-gold), #ffd166);
+    border-radius: 3px;
+    transform: translateX(-50%);
+    transition:
+        width 700ms cubic-bezier(0.2, 0.9, 0.2, 1),
+        opacity 400ms;
+    opacity: 0.95;
+    will-change: width;
+}
+
+/* When the parent section gets .visible, animate */
+section.visible h2::after {
+    width: 72%;
+}
+
+section p {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+/* PROJECTS ---------------------------------------------- */
+
+.project {
+    margin-bottom: 3rem;
+    border-left: 3px solid var(--accent-gold);
+    padding-left: 1.5rem;
+    transition: var(--transition);
+}
+
+.project:hover {
+    transform: translateX(5px);
+}
+
+.project h3 {
+    color: var(--text-light);
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+}
+
+.pcenter {
+    text-align: center;
+}
+
+.project video,
+.project img {
+    border-radius: 12px;
+    margin: 0.5rem;
+    transition: var(--transition);
+}
+
+.project video:hover,
+.project img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(249, 199, 79, 0.3);
+}
+
+/* FOOTER ------------------------------------------------- */
+
+footer {
+    background: var(--blue-dark);
+    color: var(--text-muted);
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer a {
+    color: var(--accent-gold);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* STRIPE TITLE ------------------------------------------ */
+
+.stripe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--accent-gold);
+    color: var(--blue-dark);
+    text-align: center;
+    padding: 0.5rem 0;
+    font-weight: 800;
+    letter-spacing: 1px;
+    z-index: 999;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* ANIMATIONS -------------------------------------------- */
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE -------------------------------------------- */
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 6rem 1.5rem;
+        text-align: left;
+    }
+
+    .hero-content h3 {
+        font-size: 2rem;
+    }
+
+    .project {
+        border-left: none;
+        border-top: 3px solid var(--accent-gold);
+        padding-top: 1rem;
+    }
+
+    video,
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.95rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content h3 {
+        font-size: 1.8rem;
+    }
+}
