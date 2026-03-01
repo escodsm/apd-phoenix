@@ -5,9 +5,10 @@
   <div class="headshot"></div>
 
   <div class="hero-content">
-    <h3>Steve Cordeiro</h3>
+    <h1>AnchorPoint Digital</h1>
     <p>
-      Full-Stack Web Developer
+      <span class="pipe">•</span>
+      Full-Stack Web Development
       <span class="pipe">•</span> Solutions Engineering
     </p>
   </div>

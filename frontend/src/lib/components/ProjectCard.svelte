@@ -17,6 +17,16 @@
           </video>
         {:else if item.type === 'image'}
           <img src={item.src} alt={item.alt ?? ''} width="320" height="240" />
+        {:else if item.type === "youtube"}
+        <iframe
+          width="560"
+          height="315"
+          src={item.src}
+          title={item.alt}
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
         {/if}
       {/each}
     </div>
