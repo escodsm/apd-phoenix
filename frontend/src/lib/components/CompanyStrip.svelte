@@ -1,10 +1,10 @@
 <script>
   const companies = [
-    { name: "Tegna", file: "/images/logos/tegnaLogo.png" },
-    { name: "IGT", file: "/images/logos/BrightstarLogo.png" },
-    { name: "Mercedes-Benz", file: "/images/logos/benzLogo.png" },
-    { name: "Altria", file: "/images/logos/altriaLogo.png" },
-    { name: "Rockwell Automation", file: "/images/logos/rockwellLogo.png" }
+    { name: "Tegna", file: "src/lib/assets/logos/tegnaLogo.png" },
+    { name: "IGT", file: "src/lib/assets/logos/BrightstarLogo.png" },
+    { name: "Mercedes-Benz", file: "src/lib/assets/logos/benzLogo.png" },
+    { name: "Altria", file: "src/lib/assets/logos/altriaLogo.png" },
+    { name: "Rockwell Automation", file: "src/lib/assets/logos/rockwellLogo.png" }
   ];
 </script>
 
