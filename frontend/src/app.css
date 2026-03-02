@@ -44,6 +44,7 @@ body {
   color: var(--text-primary);
   line-height: 1.65;
   font-size: 16px;
+  margin-top: 100px;
 }
 
 /* ----------------------------------------
@@ -55,30 +56,35 @@ body {
   border-bottom: 1px solid #1c1c1c;
 }
 
-.identity h1 {
+.hero-content h1 {
   font-size: 2.4rem;
   font-weight: 700;
   letter-spacing: 1px;
 }
 
-.identity p {
+.hero-content p {
   margin-top: 0.5rem;
   color: var(--text-muted);
 }
 
-.draw-line {
-    stroke: var(--accent-color);
-    stroke-width: 3;
-    stroke-dasharray: 200;
-    stroke-dashoffset: 200;
-    animation: draw 0.8s ease-out forwards;
-    animation-delay: 300ms;
-  }
-  @keyframes draw {
-    to {
-      stroke-dashoffset: 0;
-    }
-  }
+.header-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.hero {
+    position: relative;
+  z-index: 1000;
+  background: #000;
+  color: #fafafa;
+  padding: 16px 0;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
 
 /* ----------------------------------------
    SECTION SYSTEM
@@ -122,6 +128,8 @@ body {
    ABOUT + TECHNOLOGIES MERGED
 ---------------------------------------- */
 
+
+
 .about-layout {
   display: grid;
   grid-template-columns: 1.5fr 0.9fr; /* right column narrower */
@@ -162,6 +170,14 @@ body {
   letter-spacing: 0.25em;
   color: var(--cyan);
   margin-bottom: 1.2rem;
+}
+
+.about-tech-label-title{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: var(--cyan);
+  margin-bottom: 0.06rem;
 }
 
 .about-tech {
@@ -233,7 +249,7 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .identity h1 {
+  .hero-content h1 {
     font-size: 2rem;
   }
 }
