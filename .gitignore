@@ -142,5 +142,7 @@ vite.config.ts.timestamp-*
 frontend/static/videos/
 
 # Images
-frontend/static/images/
-frontend/static/images/
+frontend/static/images/*.png 
+frontend/static/images/*.jpg
+frontend/static/images/*.jpeg
+
