@@ -48,11 +48,21 @@
   }
 
   .logo-row img {
-    max-height: 65px;
+    height: 48px;      
+    width: auto;
+    object-fit: contain;
     opacity: 0.75;
     filter: grayscale(100%) brightness(1.8);
     transition: opacity 0.3s ease, filter 0.3s ease;
   }
+
+  .logo-row img[alt="Mercedes-Benz"] {
+  height: 70px;
+}
+
+.logo-row img[alt="Tegna"] {
+  height: 46px;
+}
 
   .logo-row img:hover {
     opacity: 0.9;

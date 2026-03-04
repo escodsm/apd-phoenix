@@ -44,12 +44,30 @@ body {
   color: var(--text-primary);
   line-height: 1.65;
   font-size: 16px;
-  margin-top: 100px;
 }
 
 /* ----------------------------------------
    TOPBAR
 ---------------------------------------- */
+
+.main-nav {
+  height: 50px;
+  width: 100%;
+  backdrop-filter: blur(60px);
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    margin-bottom: 60px;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .section.about {
+    margin-top: 60px;
+  }
+}
 
 .topbar {
   padding: 3rem 1.5rem;
@@ -68,12 +86,21 @@ body {
 }
 
 .header-wrapper {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
 }
+
+/* ----------------------------------------
+   Scroll fix
+---------------------------------------- */
+
+.section {
+  scroll-margin-top: 70px;
+}
+
 
 .hero {
     position: relative;

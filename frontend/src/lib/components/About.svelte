@@ -10,7 +10,7 @@
     }, 50);
   });
 </script>
-<section class="section about">
+<section class="section about" id="about">
  <div class="container">
         {#if show}
         <div class="about-tech-label-title" in:fly={{ y: 16, duration: 450, delay: 100 }}>
@@ -37,7 +37,7 @@
             {/if}
             {#if show}
             <div class="about-tech" in:fly={{ y: 16, duration: 450, delay: 900 }}>
-            <div class="about-tech">
+            
                 <div class="tech-item" in:fade={{ duration: 450, delay: 1000 }}>
                     <i class="devicon-csharp-plain" ></i>
                     <span>C# / .NET</span>
@@ -67,7 +67,7 @@
                     <i class="devicon-mysql-plain"></i>
                     <span>SQL</span>
                 </div>
-            </div>
+            
         </div>
         {/if}
       </div><!--about tech wrapper-->
