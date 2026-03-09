@@ -3,7 +3,7 @@ export type Project = {
   title: string;
   description: string;
   media?: {
-    type: 'video' | 'image' | 'youtube';
+    type: 'video' | 'image' | 'image_tall' | 'image_wide';
     src: string;
     poster?: string;
     alt?: string;
@@ -18,9 +18,8 @@ export const projects: Project[] = [
       "Developed an AR training app for iOS using SOLIDWORKS, Creo Illustrate, Vuforia Engine, and Angular/Ionic framework.",
     media: [
       {
-        type: "youtube",
-        src: "https://youtube.com/embed/TbhHoQpjQ90?feature=share",
-        poster: "/images/poster45.png",
+        type: "image_tall",
+        src: "/images/poster45.png",
         alt: " AR iOS App Demo"
       }
     ]
@@ -32,16 +31,9 @@ export const projects: Project[] = [
       "UI/UX development for web-based training, converting Flash/Flex to HTML5/AngularJS.",
     media: [
       {
-        type: "image",
-        src: "/images/poster1.png",
-        poster: "/images/poster1.png",
+        type: "image_wide",
+        src: "/images/live/gtech.png",
         alt: "Interactive Training Demo"
-      },
-      {
-        type: "image",
-        src: "/images/poster2.png",
-        poster: "/images/poster2.png",
-        alt: "GUI Training Demo"
       }
     ]
   },
@@ -53,15 +45,13 @@ export const projects: Project[] = [
     media: [
       {
         type: "image",
-        src: "/images/poster4.png",
-        poster: "/images/poster4.png",
+        src: "/images/live/e3d1.png",
         alt: "Digital Twin Demo"
       },
       {
         type: "image",
-        src: "/images/poster3.png",
-        poster: "/images/poster3.png",
-        alt: "Digital Twin Running Demo"
+        src: "/images/live/e3d_api.png",
+        alt: "Digital Twin Demo"
       }
     ]
   },
@@ -69,12 +59,12 @@ export const projects: Project[] = [
     id: 4,
     title: "Online Advertising Campaigns / Websites",
     description:
-      "Developed websites and IAB-compliant banner ads for OEM, retail, small business and academia.",
+      "Developed websites, interactive modules, and IAB-compliant advertising for OEM auto manufacturers and consumer brands, including Mercedes-Benz, Altria.",
     media: [
-      { type: "image", src: "/images/bannas.jpg", alt: "IAB Banner Ad" },
-      { type: "image", src: "/images/dilawri.jpg", alt: "Dilawri Website" },
-      { type: "image", src: "/images/fruzzetti.jpg", alt: "Fruzzetti Website" },
-      { type: "image", src: "/images/altria.jpg", alt: "Altria Website" }
+      { type: "image", src: "/images/live/bannas.png", alt: "IAB Banner Ad" },
+      { type: "image", src: "/images/live/dilawri.png", alt: "Dilawri Website" },
+      { type: "image", src: "/images/live/rallye.png", alt: "Mercedes-Benz Website" },
+      { type: "image", src: "/images/live/altria.png", alt: "Altria Website" }
     ]
   }
 ];
