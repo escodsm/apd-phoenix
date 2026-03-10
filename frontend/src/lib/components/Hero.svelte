@@ -2,9 +2,8 @@
 </script>
 
 <header class="hero">
-  <div class="headshot"></div>
-
   <div class="hero-content">
+  <span class="icon"><img src="/images/live/logo_removebg_thumb.png" alt="Icon" /></span>
     <h1>AnchorPoint Digital</h1>
     <p>
       <span class="pipe">•</span>

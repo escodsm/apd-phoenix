@@ -6,19 +6,24 @@
 
 <div class="project">
   <h3>{project.title}</h3>
-  <p>{project.description}</p>
 
-  {#if project.media}
-    <div class="pcenter">
-      {#each project.media as item}
-        {#if item.type === 'image'}
-          <img src={item.src} alt={item.alt ?? ''} width="320" height="240" />
-        {:else if item.type === 'image_wide'}
-          <img src={item.src} alt={item.alt ?? ''} width="664" height="240" />
+  <div class="project-layout">
+
+    {#if project.media}
+      <div class="pcenter">
+        {#each project.media as item}
+          {#if item.type === 'image'}
+            <img src={item.src} alt={item.alt ?? ''} width="320" height="240" />
+          {:else if item.type === 'image_wide'}
+            <img src={item.src} alt={item.alt ?? ''} width="447" height="240" />
           {:else if item.type === 'image_tall'}
-          <img src={item.src} alt={item.alt ?? ''} width="531" height="944" />
-        {/if}
-      {/each}
-    </div>
-  {/if}
+            <img src={item.src} alt={item.alt ?? ''} width="281" height="500" />
+          {/if}
+        {/each}
+      </div>
+    {/if}
+
+    <p class="project-description">{project.description}</p>
+
+  </div>
 </div>

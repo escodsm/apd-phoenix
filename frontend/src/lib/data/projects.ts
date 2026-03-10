@@ -19,7 +19,7 @@ export const projects: Project[] = [
     media: [
       {
         type: "image_tall",
-        src: "/images/poster45.png",
+        src: "/images/live/poster45.jpg",
         alt: " AR iOS App Demo"
       }
     ]
@@ -31,8 +31,13 @@ export const projects: Project[] = [
       "UI/UX development for web-based training, converting Flash/Flex to HTML5/AngularJS.",
     media: [
       {
-        type: "image_wide",
-        src: "/images/live/gtech.png",
+        type: "image",
+        src: "/images/live/gtech1.png",
+        alt: "Interactive Training Demo"
+      },
+      {
+        type: "image",
+        src: "/images/live/gtech2.png",
         alt: "Interactive Training Demo"
       }
     ]
@@ -44,12 +49,12 @@ export const projects: Project[] = [
       "Digital HMI simulation platform for tracking KPIs and OEE, demonstrated at Rockwell Automation Fair 2023/2024.",
     media: [
       {
-        type: "image",
+        type: "image_wide",
         src: "/images/live/e3d1.png",
         alt: "Digital Twin Demo"
       },
       {
-        type: "image",
+        type: "image_wide",
         src: "/images/live/e3d_api.png",
         alt: "Digital Twin Demo"
       }
