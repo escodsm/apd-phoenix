@@ -5,6 +5,7 @@ export type Project = {
   media?: {
     type: 'video' | 'image' | 'image_tall' | 'image_wide';
     src: string;
+    description?: string;
     poster?: string;
     alt?: string;
   }[];
@@ -20,6 +21,7 @@ export const projects: Project[] = [
       {
         type: "image_tall",
         src: "/images/live/poster45.jpg",
+        description: "AR iOS App Demo",
         alt: " AR iOS App Demo"
       }
     ]
@@ -33,11 +35,13 @@ export const projects: Project[] = [
       {
         type: "image",
         src: "/images/live/gtech1.png",
+        description: "Interactive Training Demo",
         alt: "Interactive Training Demo"
       },
       {
         type: "image",
         src: "/images/live/gtech2.png",
+        description: "Interactive Training Demo",
         alt: "Interactive Training Demo"
       }
     ]
@@ -51,11 +55,13 @@ export const projects: Project[] = [
       {
         type: "image_wide",
         src: "/images/live/e3d1.png",
+        description: "Digital Twin Demo",
         alt: "Digital Twin Demo"
       },
       {
         type: "image_wide",
         src: "/images/live/e3d_api.png",
+        description: "Digital Twin API Integration",
         alt: "Digital Twin Demo"
       }
     ]
@@ -66,10 +72,26 @@ export const projects: Project[] = [
     description:
       "Developed websites, interactive modules, and IAB-compliant advertising for OEM auto manufacturers and consumer brands, including Mercedes-Benz, Altria.",
     media: [
-      { type: "image", src: "/images/live/bannas.png", alt: "IAB Banner Ad" },
-      { type: "image", src: "/images/live/dilawri.png", alt: "Dilawri Website" },
-      { type: "image", src: "/images/live/rallye.png", alt: "Mercedes-Benz Website" },
-      { type: "image", src: "/images/live/altria.png", alt: "Altria Website" }
+      { type: "image", 
+        src: "/images/live/bannas.png", 
+        description: "IAB Banner Ad",
+        alt: "IAB Banner Ad" 
+      },
+      { type: "image", 
+        src: "/images/live/dilawri.png", 
+        description: "Dilawri Website", 
+        alt: "Dilawri Website" 
+      },
+      { type: "image", 
+        src: "/images/live/rallye.png", 
+        description: "Rallye Website",
+        alt: "Mercedes-Benz Website" 
+      },
+      { type: "image", 
+        src: "/images/live/altria.png", 
+        description: "Altria Website",
+        alt: "Altria Website" 
+      }
     ]
   }
 ];

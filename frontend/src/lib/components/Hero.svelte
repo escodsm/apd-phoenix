@@ -8,7 +8,8 @@
     <p>
       <span class="pipe">•</span>
       Full-Stack Web Development
-      <span class="pipe">•</span> Solutions Engineering
+      <span class="pipe">•</span> 
+      Solutions Engineering
     </p>
   </div>
 </header>

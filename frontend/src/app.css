@@ -1,5 +1,5 @@
 /* ----------------------------------------
-   AnchorPoint – Black / Cyan Edition
+   AnchorPoint – Black / Cyan Edition (Fluid)
 ---------------------------------------- */
 
 :root {
@@ -15,17 +15,18 @@
   --text-muted: #8a98a5;
 
   --max-width: 1100px;
-}
 
-.hero-content {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
+  /* fluid spacing */
+  --section-pad: clamp(3rem, 6vw, 6rem);
+  --card-pad: clamp(1.2rem, 2.5vw, 2rem);
 
-.pipe {
-    margin: 0 0.8rem;
-    color: var(--cyan);
+  /* fluid typography */
+  --h1: clamp(1.8rem, 3vw, 2.4rem);
+  --h2: clamp(1.6rem, 2.6vw, 2.4rem);
+  --body: clamp(0.95rem, 1vw, 1.05rem);
+
+  /* nav offset for anchor scroll */
+  --nav-offset: clamp(320px, 10vw, 120px);
 }
 
 /* RESET */
@@ -38,58 +39,23 @@
   padding: 0;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 body {
   font-family: "Space Grotesk", sans-serif;
   background: var(--bg-primary);
   color: var(--text-primary);
   line-height: 1.65;
-  font-size: 16px;
+  font-size: var(--body);
 }
 
 /* ----------------------------------------
-   TOPBAR
+   HEADER / NAV
 ---------------------------------------- */
-
-.main-nav {
-  height: 50px;
-  width: 100%;
-  backdrop-filter: blur(60px);
-}
-
-@media (max-width: 768px) {
-  .main-nav {
-    margin-bottom: 60px;
-  }
-}
-
-
-@media (max-width: 900px) {
-  .section.about {
-    margin-top: 60px;
-  }
-}
-
-.topbar {
-  padding: 3rem 1.5rem;
-  border-bottom: 1px solid #1c1c1c;
-}
-
-.hero-content{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.hero-content h1 {
-  font-size: 2.4rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-.hero-content p {
-  margin-top: 0.5rem;
-  color: var(--text-muted);
-}
 
 .header-wrapper {
   position: sticky;
@@ -99,24 +65,44 @@ body {
   z-index: 1000;
 }
 
-/* ----------------------------------------
-   Scroll fix
----------------------------------------- */
-
-.section {
-  scroll-margin-top: 70px;
+.main-nav {
+  height: 50px;
+  width: 100%;
+  backdrop-filter: blur(60px);
 }
 
-
 .hero {
-    position: relative;
+  position: relative;
   z-index: 1000;
   background: #000;
   color: #fafafa;
-  padding: 16px 0;
+  padding: clamp(12px, 2vw, 16px) 0;
   text-align: center;
   font-weight: 700;
   letter-spacing: 1px;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.hero-content h1 {
+  font-size: var(--h1);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.hero-content p {
+  margin-top: 0.4rem;
+  color: var(--text-muted);
+}
+
+.pipe {
+  margin: 0 0.8rem;
+  color: var(--cyan);
 }
 
 /* ----------------------------------------
@@ -124,13 +110,10 @@ body {
 ---------------------------------------- */
 
 .section {
-  padding: 6rem 1.5rem;
+  padding: var(--section-pad) 1.5rem;
   background: var(--bg-panel);
   border-top: 1px solid var(--bg-border);
-}
-
-.section--alt {
-  background: var(--bg-section);
+  scroll-margin-top: var(--nav-offset);
 }
 
 .container {
@@ -138,12 +121,8 @@ body {
   margin: 0 auto;
 }
 
-/* ----------------------------------------
-   HEADINGS
----------------------------------------- */
-
 .section h2 {
-  font-size: 2.4rem;
+  font-size: var(--h2);
   font-weight: 700;
   letter-spacing: 0.5px;
 }
@@ -158,40 +137,33 @@ body {
 }
 
 /* ----------------------------------------
-   ABOUT + TECHNOLOGIES MERGED
+   ABOUT + TECHNOLOGIES
 ---------------------------------------- */
-
-
 
 .about-layout {
   display: grid;
-  grid-template-columns: 1.5fr 0.9fr; /* right column narrower */
-  gap: 4rem;
+  grid-template-columns: 1.5fr 0.9fr;
+  gap: clamp(2rem, 4vw, 4rem);
   align-items: start;
   position: relative;
 }
 
-/* Vertical cyan divider */
 .about-layout::after {
   content: "";
   position: absolute;
-  top: 0.4rem;   /* aligns with first paragraph baseline */
+  top: 0.4rem;
   bottom: 0;
   left: calc(60% + 2rem);
   width: 1px;
   background: rgba(0,181,226,0.25);
 }
 
-/* LEFT SIDE */
-
 .about-text p {
   color: var(--text-muted);
   margin-top: 2rem;
   margin-bottom: 1.2rem;
-  font-size: 1.05rem;
+  font-size: var(--body);
 }
-
-/* RIGHT SIDE */
 
 .about-tech-wrapper {
   padding-left: 2rem;
@@ -205,12 +177,11 @@ body {
   margin-bottom: 1.2rem;
 }
 
-.about-tech-label-title{
-  font-size: 1.5rem;
+.about-tech-label-title {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
   text-transform: uppercase;
   letter-spacing: 0.25em;
   color: var(--cyan);
-  margin-bottom: 0.06rem;
 }
 
 .about-tech {
@@ -228,7 +199,7 @@ body {
 
 .tech-item i {
   color: var(--cyan);
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 /* ----------------------------------------
@@ -237,9 +208,9 @@ body {
 
 .project {
   background: var(--bg-elevated);
-  padding: 2rem;
+  padding: var(--card-pad);
   border-left: 3px solid var(--cyan);
-  margin-bottom: 2.5rem;
+  margin-bottom: clamp(1.8rem, 3vw, 2.5rem);
   transition: 200ms ease;
 }
 
@@ -256,20 +227,31 @@ body {
   color: var(--text-muted);
 }
 
-.project-layout {
+.media-row {
   display: flex;
-  align-items: flex-start;
-  gap: 24px;
-  margin-top: 10px;
+  align-items: center;
+  gap: clamp(16px, 3vw, 28px);
+  margin-bottom: clamp(18px, 3vw, 32px);
+  min-width: 0;
 }
 
 .project-description {
-  max-width: 420px;
+  max-width: 500px;
+  width: 100%;
   color: var(--text-muted);
 }
 
-.pcenter img {
-  display: block;
+.project-image {
+  width: 100%;
+  max-width: 320px;
+}
+
+.image-wide {
+  max-width: 447px;
+}
+
+.image-tall {
+  max-width: 281px;
 }
 
 /* ----------------------------------------
@@ -277,7 +259,7 @@ body {
 ---------------------------------------- */
 
 footer {
-  padding: 3rem 1.5rem;
+  padding: clamp(2rem, 4vw, 3rem) 1.5rem;
   border-top: 1px solid #1c1c1c;
   color: var(--text-muted);
   text-align: center;
@@ -288,23 +270,11 @@ footer {
 ---------------------------------------- */
 
 @media (max-width: 900px) {
-  .tech-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
-@media (max-width: 600px) {
-  .tech-grid {
-    grid-template-columns: 1fr;
+  :root {
+    --nav-offset: 250px;
   }
 
-  .hero-content h1 {
-    font-size: 2rem;
-  }
-}
-
-
-@media (max-width: 900px) {
   .about-layout {
     grid-template-columns: 1fr;
   }
@@ -317,28 +287,64 @@ footer {
     padding-left: 0;
     margin-top: 2rem;
   }
+
 }
 
 @media (max-width: 768px) {
-  .hero-content {
-    flex-direction: column;
-    align-items: flex-start;
+  
+  :root {
+    --nav-offset: 210px;
   }
 
-  .hero-content p {
-    margin-top: 0.8rem;
-    margin-left: 0.5rem;
+  .hero {
+    padding: 8px 0;
   }
 
   .hero-content h1 {
-    margin-left: 1.5rem;
+    font-size: clamp(1.4rem, 4vw, 1.8rem);
   }
+
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-content p {
+    display: none;
+    /* display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.3rem 0.6rem;*/
+  }
+
+  .pipe {
+    display: none;
+  }
+
+  .media-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project-image {
+    max-width: 100%;
+  }
+
+  .project-description {
+    max-width: 100%;
+  }
+
 }
 
 @media (max-width: 480px) {
+
   .hero-content p {
+    display: none;
+    /*display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 0.3rem;
+    gap: 0.3rem;*/
   }
+
 }
