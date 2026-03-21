@@ -14,6 +14,20 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: 1,
+    title: "WrenchIQ - Guided Diagnostics and Repair iOS App",
+    description:
+      "Developing an app for iOS which enables users to perform guided diagnostics and repair of their vehicles",
+    media: [
+      {
+        type: "image_tall",
+        src: "/images/live/wrenchiq-app.jpg",
+        description: "WrenchIQ iOS App",
+        alt: "WrenchIQ iOS App"
+      }
+    ]
+  },
+  {
+    id: 2,
     title: "Augmented Reality iOS App - International Game Technology",
     description:
       "Developed an AR training app for iOS using SOLIDWORKS, Creo Illustrate, Vuforia Engine, and Angular/Ionic framework.",
@@ -27,7 +41,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: 2,
+    id: 3,
     title: "Learning Wizard - International Game Technology",
     description:
       "UI/UX development for web-based training, converting Flash/Flex to HTML5/AngularJS.",
@@ -47,7 +61,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: 3,
+    id: 4,
     title: "Digital Twin - University of Wisconsin, Milwaukee",
     description:
       "Digital HMI simulation platform for tracking KPIs and OEE, demonstrated at Rockwell Automation Fair 2023/2024.",
@@ -67,7 +81,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: 4,
+    id: 5,
     title: "Online Advertising Campaigns / Websites",
     description:
       "Developed websites, interactive modules, and IAB-compliant advertising for OEM auto manufacturers and consumer brands, including Mercedes-Benz, Altria.",
