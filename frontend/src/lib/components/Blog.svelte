@@ -4,7 +4,7 @@
 
   const posts = [
     {
-      tag: 'In Progress',
+      tag: 'AI & Programming',
       heading: 'Practical AI For Real-World Diagnostics',
       summary:
         'How I built a VIN-based diagnostic assistant with React Native + Supabase. A look at the architecture, data pipeline, and lessons learned from integrating LLMs into a mobile workflow for automotive diagnostics.',
