@@ -23,11 +23,26 @@
        {#if show}
         <div class="about-text" in:fade={{ duration: 450, delay: 200 }}>
             <p>
-            We engineer solutions that bridge software, simulation, and real-world operations. From IIoT manufacturing systems to AR training 
-            applications and full-stack web platforms, we focus on building tools that are technically sound and operationally meaningful.
-
-            With 15+ years in development and technical systems design, we bring clarity to complexity — and ship work that performs.
+            I build systems that work in the real world — IIoT, automation, and full-stack applications.
+15+ years shipping production software with a focus on performance, reliability, and clarity.
             </p>
+
+          <div class="about-tech-label-title about-subsection-title">What I'm Working On</div>
+          <p>
+            I'm currently building mobile-first tools that combine practical AI, guided decision support, and real-world utility — products designed to help people diagnose problems, make confident choices, and get things working again.
+          </p>
+          <p>
+            Built with React Native, Svelte, Supabase, and Vercel, with supporting infrastructure across APIs, messaging (Resend), and DNS-level integration.
+          </p>
+          <p>
+            Alongside this, I work on high-scale media platforms:
+          </p>
+            <ul>
+              <li>High-scale analytics and ad tech integrations (Comscore, Kochava) across media platforms</li>
+              <li>Distributed APIs and data services backed by Cosmos</li>
+              <li>Performance, monitoring, and production reliability with New Relic</li>
+            </ul>
+          
         </div>
         {/if}
       <!-- RIGHT COLUMN -->
