@@ -23,7 +23,7 @@ export const projects: Project[] = [
       {
         type: "image_tall",
         src: "/images/live/wrenchiq-app.jpg",
-        description: "(Coming Soon!) Guided diagnostics and repair iOS app for vehicle owners and technicians.",
+        description: "(Coming Soon!) Guided diagnostics and repair iOS app for vehicle owners who want to understand and fix their own car issues.",
         solution: "Built a mobile workflow with VIN scanning, personalized diagnostics, parts lookup, and step-by-step repair guidance.",
         impact: "Shortens troubleshooting time and gives users a clearer, more consistent repair path from diagnosis to parts ordering.",
         techStack: "React Native, Expo, Supabase, Resend",

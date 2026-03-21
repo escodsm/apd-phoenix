@@ -33,7 +33,7 @@
     <div class="blog-layout">
       <div class="blog-intro">
         <p>
-          This section is where I publish short technical write-ups, implementation notes, reflections, and lessons learned from current product work.
+          This section is where I publish short technical write-ups, implementation notes, general articles, and lessons learned from current product work.
         </p>
       </div>
 
