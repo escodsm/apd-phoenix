@@ -240,14 +240,37 @@ body {
 .tech-item {
   display: grid;
   place-items: center;
-  min-height: 72px;
+  min-height: 86px;
+  padding-top: 0.95rem;
+  position: relative;
+  overflow: hidden;
   border: 1px solid rgba(74, 227, 255, 0.14);
   background: rgba(255, 255, 255, 0.03);
+}
+
+.tech-item::after {
+  content: attr(aria-label);
+  position: absolute;
+  top: 0.38rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 0.6rem);
+  text-align: center;
+  font-size: 0.56rem;
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-primary);
+  opacity: 0.92;
+  z-index: 2;
+  pointer-events: none;
 }
 
 .tech-item i {
   color: var(--cyan);
   font-size: 2.35rem;
+  position: relative;
+  z-index: 1;
 }
 
 /* ----------------------------------------
@@ -371,6 +394,18 @@ footer {
     grid-template-columns: 1fr;
   }
 
+  .project-image {
+    max-width: clamp(180px, 34vw, 280px);
+  }
+
+  .image-wide {
+    max-width: clamp(240px, 46vw, 340px);
+  }
+
+  .image-tall {
+    max-width: clamp(160px, 26vw, 230px);
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -412,7 +447,15 @@ footer {
   }
 
   .project-image {
-    max-width: 100%;
+    max-width: min(72vw, 260px);
+  }
+
+  .image-wide {
+    max-width: min(82vw, 320px);
+  }
+
+  .image-tall {
+    max-width: min(58vw, 210px);
   }
 
   .project-details {
