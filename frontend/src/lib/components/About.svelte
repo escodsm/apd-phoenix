@@ -40,32 +40,42 @@
             
                 <div class="tech-item" in:fade={{ duration: 450, delay: 1000 }}>
                     <i class="devicon-csharp-plain" ></i>
-                    <span>C# / .NET</span>
                 </div>
 
                 <div class="tech-item" in:fade={{ duration: 450, delay: 1050 }}>
                     <i class="devicon-javascript-plain"></i>
-                    <span>JavaScript</span>
                 </div>
                 
                 <div class="tech-item" in:fade={{ duration: 450, delay: 1100 }}>
                     <i class="devicon-svelte-plain"></i>
-                    <span>Svelte</span>
                 </div>
 
                 <div class="tech-item" in:fade={{ duration: 450, delay: 1150 }}>
                     <i class="devicon-azure-plain"></i>
-                    <span>Azure</span>
                 </div>
 
                 <div class="tech-item" in:fade={{ duration: 450, delay: 1200 }}>
-                    <i class="devicon-git-plain"></i>
-                    <span>Git</span>
+                  <i class="devicon-supabase-plain"></i>
                 </div>
 
                 <div class="tech-item" in:fade={{ duration: 450, delay: 1250 }}>
-                    <i class="devicon-mysql-plain"></i>
-                    <span>SQL</span>
+                  <i class="devicon-postman-plain"></i>
+                </div>
+
+                <div class="tech-item" in:fade={{ duration: 450, delay: 1300 }}>
+                  <i class="devicon-azuresqldatabase-plain"></i>
+                </div>
+
+                <div class="tech-item" in:fade={{ duration: 450, delay: 1350 }}>
+                  <i class="devicon-figma-plain"></i>
+                </div>
+
+                <div class="tech-item" in:fade={{ duration: 450, delay: 1400 }}>
+                  <i class="devicon-reactnative-original"></i>
+                </div>
+
+                <div class="tech-item" in:fade={{ duration: 450, delay: 1450 }}>
+                  <i class="devicon-expo-plain"></i>
                 </div>
             
         </div>
