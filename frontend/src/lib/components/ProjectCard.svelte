@@ -25,6 +25,13 @@
             {/if}
 
             <div class="project-details">
+              {#if item.linkUrl}
+                <p class="project-link-wrap">
+                  <a class="project-link" href={item.linkUrl} target="_blank" rel="noopener noreferrer">
+                    {item.linkLabel ?? item.linkUrl}
+                  </a>
+                </p>
+              {/if}
               <p class="project-detail"><strong>Description:</strong> {item.description}</p>
               <p class="project-detail"><strong>Solution:</strong> {item.solution}</p>
               <p class="project-detail"><strong>Impact:</strong> {item.impact}</p>

@@ -335,6 +335,21 @@ body {
   line-height: 1.45;
 }
 
+.project-link-wrap {
+  margin: 0 0 0.25rem;
+}
+
+.project-link {
+  color: var(--cyan);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 181, 226, 0.45);
+  padding-bottom: 0.08rem;
+}
+
+.project-link:hover {
+  border-bottom-color: var(--cyan);
+}
+
 .project-detail strong {
   color: var(--text-primary);
 }

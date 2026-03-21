@@ -8,6 +8,8 @@ export type Project = {
     solution: string;
     impact: string;
     techStack: string;
+    linkUrl?: string;
+    linkLabel?: string;
     poster?: string;
     alt?: string;
   }[];
@@ -25,6 +27,8 @@ export const projects: Project[] = [
         solution: "Built a mobile workflow with VIN scanning, personalized diagnostics, parts lookup, and step-by-step repair guidance.",
         impact: "Shortens troubleshooting time and gives users a clearer, more consistent repair path from diagnosis to parts ordering.",
         techStack: "React Native, Expo, Supabase, Resend",
+        linkUrl: "https://www.wrenchiq.app/",
+        linkLabel: "Visit wrenchiq.app",
         alt: "WrenchIQ iOS App"
       }
     ]
