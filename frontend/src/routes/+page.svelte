@@ -4,6 +4,8 @@
   import About from '$lib/components/About.svelte';
   import Projects from '$lib/components/Projects.svelte';
   import CompanyStrip from '$lib/components/CompanyStrip.svelte';
+  import Blog from '$lib/components/Blog.svelte';
+  import Contact from '$lib/components/Contact.svelte';
 
 </script>
 
@@ -15,3 +17,5 @@
 <About />
 <CompanyStrip />
 <Projects />
+<Blog />
+<Contact />

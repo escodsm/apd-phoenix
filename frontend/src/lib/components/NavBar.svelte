@@ -1,11 +1,13 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import { slide } from "svelte/transition";
+  import { goto } from "$app/navigation";
+  import { page } from "$app/stores";
 
   const items = [
     { label: "Main", id: "about" },
     { label: "Projects", id: "projects" },
-    { label: "IIoT", id: "iiot" },
+    { label: "Blog", id: "blog" },
     { label: "Contact", id: "contact" }
   ];
 
@@ -17,11 +19,14 @@
   const closeMenu = () => (menuOpen = false);
 
   function goToSection(id: string) {
+    const isHomePage = $page.url.pathname === '/';
     const el = document.getElementById(id);
 
-    if (el) {
+    if (isHomePage && el) {
       el.scrollIntoView({ behavior: "smooth" });
       activeSection = id;
+    } else {
+      goto(`/#${id}`);
     }
 
     closeMenu();

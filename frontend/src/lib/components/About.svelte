@@ -22,9 +22,11 @@
       <!-- LEFT COLUMN -->
        {#if show}
         <div class="about-text" in:fade={{ duration: 450, delay: 200 }}>
-            <p>
-            I build systems that work in the real world — IIoT, automation, and full-stack applications.
-15+ years shipping production software with a focus on performance, reliability, and clarity.
+            <p class="about-intro-with-photo">
+            <img src="/images/live/steve.png" alt="Steve" class="about-intro-photo" />
+            <span>
+            My name is Steve, and I build systems that work in the real world — full-stack applications, IIoT/automation and mobile apps. I have 15+ years experience shipping production software with a focus on performance, reliability, and clarity.
+            </span>
             </p>
 
           <div class="about-tech-label-title about-subsection-title">What I'm Working On</div>
