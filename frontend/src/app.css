@@ -245,6 +245,15 @@ body {
   margin-bottom: 0.6rem;
 }
 
+.project--reverse {
+  border-left: none;
+  border-right: 3px solid var(--cyan);
+}
+
+.project--reverse h3 {
+  text-align: right;
+}
+
 .project p {
   color: var(--text-muted);
 }
@@ -257,10 +266,18 @@ body {
   min-width: 0;
 }
 
+.media-row--reverse {
+  flex-direction: row-reverse;
+}
+
 .project-description {
   max-width: 500px;
   width: 100%;
   color: var(--text-muted);
+}
+
+.project--reverse .project-description {
+  text-align: right;
 }
 
 .project-image {
@@ -360,6 +377,16 @@ footer {
 
   .project-description {
     max-width: 100%;
+  }
+
+  .project--reverse {
+    border-left: 3px solid var(--cyan);
+    border-right: none;
+  }
+
+  .project--reverse h3,
+  .project--reverse .project-description {
+    text-align: left;
   }
 
 }
