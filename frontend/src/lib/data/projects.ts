@@ -88,12 +88,12 @@ export const projects: Project[] = [
     media: [
       { type: "image", 
         src: "/images/live/bannas.png", 
-        description: "(2009 - 2011)Developed websites, interactive modules, and IAB-compliant advertising for OEM auto manufacturers and consumer brands, including Mercedes-Benz, Altria. This includes the design and development of engaging banner ads, services and APIs, and responsive websites that effectively promote products and enhance brand visibility across digital platforms.",
+        description: "(2009 - 2011) Developed websites, interactive modules, and IAB-compliant advertising for OEM auto manufacturers and consumer brands, including Mercedes-Benz, Altria. This includes the design and development of engaging banner ads, services and APIs, and responsive websites that effectively promote products and enhance brand visibility across digital platforms.",
         alt: "IAB Banner Ad" 
       },
       { type: "image", 
         src: "/images/live/dilawri.png", 
-        description: "(2010)The Dilawri Group is based in Winnipeg, Manitoba, Canada. I developed a module which allowed shoppers to customize vehicles by choosing color, trim packages and options, which then provided an updated price point as well as located nearby inventory matches among partner dealerships.", 
+        description: "(2010) The Dilawri Group is based in Winnipeg, Manitoba, Canada. I developed a module which allowed shoppers to customize vehicles by choosing color, trim packages and options, which then provided an updated price point as well as located nearby inventory matches among partner dealerships.", 
         alt: "Dilawri Website" 
       },
       { type: "image", 
