@@ -29,9 +29,7 @@
 
           <div class="about-tech-label-title about-subsection-title">What I'm Working On</div>
           <p>
-            I'm currently building mobile-first tools that combine practical AI, guided decision support, and real-world utility — products designed to help people diagnose problems, make confident choices, and get things working again.
-          </p>
-          <p>
+            I'm currently building mobile-first tools that combine practical AI, guided decision support, and real-world utility — products designed to help people diagnose problems, make confident choices, and get things working again — 
             Built with React Native, Svelte, Supabase, and Vercel, with supporting infrastructure across APIs, messaging (Resend), and DNS-level integration.
           </p>
           <p>
