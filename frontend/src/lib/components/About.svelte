@@ -36,7 +36,7 @@
             Alongside this, I work on high-scale media platforms:
           </p>
             <ul>
-              <li>High-scale analytics and ad tech integrations (Comscore, Kochava) across media platforms</li>
+              <li>High-scale analytics and ad tech integrations (Comscore, Kochava) serving millions of monthly users</li>
               <li>Distributed APIs and data services backed by Cosmos</li>
               <li>Performance, monitoring, and production reliability with New Relic</li>
             </ul>

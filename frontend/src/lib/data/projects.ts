@@ -23,7 +23,7 @@ export const projects: Project[] = [
       {
         type: "image_tall",
         src: "/images/live/wrenchiq-app.jpg",
-        description: "(2026) Guided diagnostics and repair iOS app for vehicle owners and technicians.",
+        description: "(Coming Soon!) Guided diagnostics and repair iOS app for vehicle owners and technicians.",
         solution: "Built a mobile workflow with VIN scanning, personalized diagnostics, parts lookup, and step-by-step repair guidance.",
         impact: "Shortens troubleshooting time and gives users a clearer, more consistent repair path from diagnosis to parts ordering.",
         techStack: "React Native, Expo, Supabase, Resend",
@@ -40,9 +40,9 @@ export const projects: Project[] = [
       {
         type: "image_tall",
         src: "/images/live/poster45.jpg",
-        description: "(2019 - 2023) AR training iOS app for field installation and maintenance workflows.",
+        description: "(2019 - 2021) AR training iOS app for field installation and maintenance workflows.",
         solution: "Delivered interactive 3D procedures and guided task instructions powered by CAD-derived content and AR overlays.",
-        impact: "Deployed across multiple US state lotteries and enabled remote training continuity during COVID-19.",
+        impact: "Deployed across multiple US state lotteries to enable revenue continuity during COVID-19, by providing remote support and training for critical hardware maintenance tasks, saving $100,000+ dollars in technician travel and downtime costs.",
         techStack: "SOLIDWORKS, Creo Illustrate, Vuforia Engine, Angular, Ionic",
         alt: " AR iOS App Demo"
       }
@@ -57,7 +57,7 @@ export const projects: Project[] = [
         src: "/images/live/gtech1.png",
         description: "(2011 - 2023) Web-based training platform focused on UI/UX quality and instructional clarity.",
         solution: "Designed and implemented interactive training modules with streamlined navigation and role-friendly learning flows.",
-        impact: "Improved user comprehension and platform usability for training programs across lottery and gaming teams.",
+        impact: "Reduced time-to-certification for lottery retailers, allowing faster onboarding and earlier revenue generation versus traditional in-person training.",
         techStack: "Flex/AS3, C#, SQL, HTML5, AngularJS",
         alt: "Interactive Training Demo"
       },
@@ -66,7 +66,7 @@ export const projects: Project[] = [
         src: "/images/live/gtech2.png",
         description: "Course catalog expanded with simulation-driven lessons for both hardware and software topics.",
         solution: "Built responsive training modules that combine interactive simulations with guided learning checkpoints.",
-        impact: "Boosted engagement and knowledge retention while keeping delivery accessible across device types.",
+        impact: "Boosted engagement and knowledge retention by 35%while keeping delivery accessible across device types.",
         techStack: "HTML5, AngularJS, JavaScript, CSS",
         alt: "Interactive Training Demo"
       }
@@ -81,7 +81,7 @@ export const projects: Project[] = [
         src: "/images/live/e3d1.png",
         description: "(2023) Digital twin initiative for manufacturing machinery simulation and validation.",
         solution: "Created a virtual commissioning flow using physics-based emulation to test controls and process behavior before deployment.",
-        impact: "Reduced prototyping and commissioning risk by validating machine behavior earlier in the lifecycle.",
+        impact: "Reduced prototyping and commissioning costs by validating machine behavior earlier in the lifecycle.",
         techStack: "Emulate3D, Rockwell Automation suite, HMI simulation tooling",
         alt: "Digital Twin Demo"
       },
