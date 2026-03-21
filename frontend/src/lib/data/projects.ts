@@ -21,7 +21,7 @@ export const projects: Project[] = [
       {
         type: "image_tall",
         src: "/images/live/wrenchiq-app.jpg",
-        description: "WrenchIQ iOS App",
+        description: "(2026) Developing an app for iOS which enables users to perform guided diagnostics and repair of their vehicles. Features VIN scanning for personalized diagnostics, parts ordering, and repair guidance.  Technologies used include React Native, Expo, Supabase, and Resend.",
         alt: "WrenchIQ iOS App"
       }
     ]
@@ -35,7 +35,7 @@ export const projects: Project[] = [
       {
         type: "image_tall",
         src: "/images/live/poster45.jpg",
-        description: "AR iOS App Demo",
+        description: "(2019 - 2023) Developed an AR training app for iOS using SOLIDWORKS, Creo Illustrate, Vuforia Engine, and an Angular/Ionic framework. The app provides interactive 3D visualizations and step-by-step instructions for maintenance tasks, enhancing user engagement and learning outcomes. It rolled out to several US state lotteries and one of the highlights of the app was its effectiveness during the COVID-19 pandemic, as it allowed trainers and installers to continue their work remotely, reducing the need for in-person interactions and ensuring continued support for lottery operations.",
         alt: " AR iOS App Demo"
       }
     ]
@@ -44,18 +44,18 @@ export const projects: Project[] = [
     id: 3,
     title: "Learning Wizard - International Game Technology",
     description:
-      "UI/UX development for web-based training, converting Flash/Flex to HTML5/AngularJS.",
+      "UI/UX development for web-based training.",
     media: [
       {
         type: "image",
         src: "/images/live/gtech1.png",
-        description: "Interactive Training Demo",
+        description: "(2011 - 2023) UI/UX development for web-based training, using technologies like Flex/AS3, C#/SQL and HTML5/AngularJS. The Learning Wizard platform offers interactive training modules with a focus on user-friendly design and seamless navigation, enhancing the learning experience for users across the lottery and gaming industry.",
         alt: "Interactive Training Demo"
       },
       {
         type: "image",
         src: "/images/live/gtech2.png",
-        description: "Interactive Training Demo",
+        description: "Courses include interactive elements such as hardware and software simulations to engage learners and improve knowledge retention. The platform is designed to be responsive and accessible across various devices, ensuring a wide reach for training initiatives.",
         alt: "Interactive Training Demo"
       }
     ]
@@ -69,13 +69,13 @@ export const projects: Project[] = [
       {
         type: "image_wide",
         src: "/images/live/e3d1.png",
-        description: "Digital Twin Demo",
+        description: "(2023) The digital twin project utilizes advanced simulation/emulation technologies to create a virtual representation of manufacturing machinery, allowing for faster prototyping, testing and commissioning. The platform uses Emulate3D physics and the Rockwell Automation suite for comprehensive simulation capabilities.",
         alt: "Digital Twin Demo"
       },
       {
         type: "image_wide",
         src: "/images/live/e3d_api.png",
-        description: "Digital Twin API Integration",
+        description: "(2024) This digital HMI (Human-Machine Interface) simulation platform is a virtual representation of production manufacturing processes, allowing for real-time monitoring and optimization of operations. The platform integrates with various data sources to provide insights into performance metrics and facilitate informed decision-making.",
         alt: "Digital Twin Demo"
       }
     ]
@@ -88,22 +88,22 @@ export const projects: Project[] = [
     media: [
       { type: "image", 
         src: "/images/live/bannas.png", 
-        description: "IAB Banner Ad",
+        description: "(2009 - 2011)Developed websites, interactive modules, and IAB-compliant advertising for OEM auto manufacturers and consumer brands, including Mercedes-Benz, Altria. This includes the design and development of engaging banner ads, services and APIs, and responsive websites that effectively promote products and enhance brand visibility across digital platforms.",
         alt: "IAB Banner Ad" 
       },
       { type: "image", 
         src: "/images/live/dilawri.png", 
-        description: "Dilawri Website", 
+        description: "(2010)The Dilawri Group is based in Winnipeg, Manitoba, Canada. I developed a module which allowed shoppers to customize vehicles by choosing color, trim packages and options, which then provided an updated price point as well as located nearby inventory matches among partner dealerships.", 
         alt: "Dilawri Website" 
       },
       { type: "image", 
         src: "/images/live/rallye.png", 
-        description: "Rallye Website",
-        alt: "Mercedes-Benz Website" 
+        description: "(2010) The Rallye Group is a multi-brand automotive retailer based in New York. I utilized the Google Maps API to create a store locator module which allowed users to get directions to Rallye dealerships sent to their phones.",
+        alt: "Rallye Website" 
       },
       { type: "image", 
         src: "/images/live/altria.png", 
-        description: "Altria Website",
+        description: "(2009) Altria, a leader in the tobacco industry, partnered with us to create an employee training website for their Marlboro brand. I developed an interactive module that allowed onboarding to take place online, which included a quiz to test knowledge retention. This project helped Altria streamline their training process and ensure consistent messaging across their workforce.",
         alt: "Altria Website" 
       }
     ]
