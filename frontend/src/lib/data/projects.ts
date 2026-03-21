@@ -1,11 +1,13 @@
 export type Project = {
   id: number;
   title: string;
-  description: string;
   media?: {
     type: 'video' | 'image' | 'image_tall' | 'image_wide';
     src: string;
-    description?: string;
+    description: string;
+    solution: string;
+    impact: string;
+    techStack: string;
     poster?: string;
     alt?: string;
   }[];
@@ -15,13 +17,14 @@ export const projects: Project[] = [
   {
     id: 1,
     title: "WrenchIQ - Guided Diagnostics and Repair iOS App",
-    description:
-      "Developing an app for iOS which enables users to perform guided diagnostics and repair of their vehicles",
     media: [
       {
         type: "image_tall",
         src: "/images/live/wrenchiq-app.jpg",
-        description: "(2026) Developing an app for iOS which enables users to perform guided diagnostics and repair of their vehicles. Features VIN scanning for personalized diagnostics, parts ordering, and repair guidance.  Technologies used include React Native, Expo, Supabase, and Resend.",
+        description: "(2026) Guided diagnostics and repair iOS app for vehicle owners and technicians.",
+        solution: "Built a mobile workflow with VIN scanning, personalized diagnostics, parts lookup, and step-by-step repair guidance.",
+        impact: "Shortens troubleshooting time and gives users a clearer, more consistent repair path from diagnosis to parts ordering.",
+        techStack: "React Native, Expo, Supabase, Resend",
         alt: "WrenchIQ iOS App"
       }
     ]
@@ -29,13 +32,14 @@ export const projects: Project[] = [
   {
     id: 2,
     title: "Augmented Reality iOS App - International Game Technology",
-    description:
-      "Developed an AR training app for iOS using SOLIDWORKS, Creo Illustrate, Vuforia Engine, and Angular/Ionic framework.",
     media: [
       {
         type: "image_tall",
         src: "/images/live/poster45.jpg",
-        description: "(2019 - 2023) Developed an AR training app for iOS using SOLIDWORKS, Creo Illustrate, Vuforia Engine, and an Angular/Ionic framework. The app provides interactive 3D visualizations and step-by-step instructions for maintenance tasks, enhancing user engagement and learning outcomes. It rolled out to several US state lotteries and one of the highlights of the app was its effectiveness during the COVID-19 pandemic, as it allowed trainers and installers to continue their work remotely, reducing the need for in-person interactions and ensuring continued support for lottery operations.",
+        description: "(2019 - 2023) AR training iOS app for field installation and maintenance workflows.",
+        solution: "Delivered interactive 3D procedures and guided task instructions powered by CAD-derived content and AR overlays.",
+        impact: "Deployed across multiple US state lotteries and enabled remote training continuity during COVID-19.",
+        techStack: "SOLIDWORKS, Creo Illustrate, Vuforia Engine, Angular, Ionic",
         alt: " AR iOS App Demo"
       }
     ]
@@ -43,19 +47,23 @@ export const projects: Project[] = [
   {
     id: 3,
     title: "Learning Wizard - International Game Technology",
-    description:
-      "UI/UX development for web-based training.",
     media: [
       {
         type: "image",
         src: "/images/live/gtech1.png",
-        description: "(2011 - 2023) UI/UX development for web-based training, using technologies like Flex/AS3, C#/SQL and HTML5/AngularJS. The Learning Wizard platform offers interactive training modules with a focus on user-friendly design and seamless navigation, enhancing the learning experience for users across the lottery and gaming industry.",
+        description: "(2011 - 2023) Web-based training platform focused on UI/UX quality and instructional clarity.",
+        solution: "Designed and implemented interactive training modules with streamlined navigation and role-friendly learning flows.",
+        impact: "Improved user comprehension and platform usability for training programs across lottery and gaming teams.",
+        techStack: "Flex/AS3, C#, SQL, HTML5, AngularJS",
         alt: "Interactive Training Demo"
       },
       {
         type: "image",
         src: "/images/live/gtech2.png",
-        description: "Courses include interactive elements such as hardware and software simulations to engage learners and improve knowledge retention. The platform is designed to be responsive and accessible across various devices, ensuring a wide reach for training initiatives.",
+        description: "Course catalog expanded with simulation-driven lessons for both hardware and software topics.",
+        solution: "Built responsive training modules that combine interactive simulations with guided learning checkpoints.",
+        impact: "Boosted engagement and knowledge retention while keeping delivery accessible across device types.",
+        techStack: "HTML5, AngularJS, JavaScript, CSS",
         alt: "Interactive Training Demo"
       }
     ]
@@ -63,19 +71,23 @@ export const projects: Project[] = [
   {
     id: 4,
     title: "Digital Twin - University of Wisconsin, Milwaukee",
-    description:
-      "Digital HMI simulation platform for tracking KPIs and OEE, demonstrated at Rockwell Automation Fair 2023/2024.",
     media: [
       {
         type: "image_wide",
         src: "/images/live/e3d1.png",
-        description: "(2023) The digital twin project utilizes advanced simulation/emulation technologies to create a virtual representation of manufacturing machinery, allowing for faster prototyping, testing and commissioning. The platform uses Emulate3D physics and the Rockwell Automation suite for comprehensive simulation capabilities.",
+        description: "(2023) Digital twin initiative for manufacturing machinery simulation and validation.",
+        solution: "Created a virtual commissioning flow using physics-based emulation to test controls and process behavior before deployment.",
+        impact: "Reduced prototyping and commissioning risk by validating machine behavior earlier in the lifecycle.",
+        techStack: "Emulate3D, Rockwell Automation suite, HMI simulation tooling",
         alt: "Digital Twin Demo"
       },
       {
         type: "image_wide",
         src: "/images/live/e3d_api.png",
-        description: "(2024) This digital HMI (Human-Machine Interface) simulation platform is a virtual representation of production manufacturing processes, allowing for real-time monitoring and optimization of operations. The platform integrates with various data sources to provide insights into performance metrics and facilitate informed decision-making.",
+        description: "(2024) Digital HMI simulation platform representing real production processes and performance signals.",
+        solution: "Integrated process data and visualization layers to monitor operations and expose KPI/OEE trends in near real time.",
+        impact: "Improved operational visibility and enabled faster decisions through centralized simulation analytics.",
+        techStack: "Emulate3D, Rockwell Automation suite, API integrations",
         alt: "Digital Twin Demo"
       }
     ]
@@ -83,27 +95,37 @@ export const projects: Project[] = [
   {
     id: 5,
     title: "Online Advertising Campaigns / Websites",
-    description:
-      "Developed websites, interactive modules, and IAB-compliant advertising for OEM auto manufacturers and consumer brands, including Mercedes-Benz, Altria.",
     media: [
       { type: "image", 
         src: "/images/live/bannas.png", 
-        description: "(2009 - 2011) Developed websites, interactive modules, and IAB-compliant advertising for OEM auto manufacturers and consumer brands, including Mercedes-Benz, Altria. This includes the design and development of engaging banner ads, services and APIs, and responsive websites that effectively promote products and enhance brand visibility across digital platforms.",
+        description: "(2009 - 2011) Digital campaigns, interactive modules, and IAB-compliant advertising for major brands.",
+        solution: "Designed and built responsive sites, banner campaigns, and integrated web services to support brand initiatives.",
+        impact: "Expanded digital reach and improved brand visibility across OEM and consumer-focused campaigns.",
+        techStack: "HTML, CSS, JavaScript, APIs, ad serving platforms",
         alt: "IAB Banner Ad" 
       },
       { type: "image", 
         src: "/images/live/dilawri.png", 
-        description: "(2010) The Dilawri Group is based in Winnipeg, Manitoba, Canada. I developed a module which allowed shoppers to customize vehicles by choosing color, trim packages and options, which then provided an updated price point as well as located nearby inventory matches among partner dealerships.", 
+        description: "(2010) Vehicle configuration experience for Dilawri Group dealership shoppers.", 
+        solution: "Built an interactive configurator for colors, trims, and options with dynamic pricing and inventory matching.",
+        impact: "Improved shopping engagement and helped connect users to nearby in-stock vehicles faster.",
+        techStack: "JavaScript, pricing logic, inventory APIs, custom UI modules",
         alt: "Dilawri Website" 
       },
       { type: "image", 
         src: "/images/live/rallye.png", 
-        description: "(2010) The Rallye Group is a multi-brand automotive retailer based in New York. I utilized the Google Maps API to create a store locator module which allowed users to get directions to Rallye dealerships sent to their phones.",
+        description: "(2010) Store locator experience for Rallye Group automotive dealerships.",
+        solution: "Implemented a location-aware dealer finder with Google Maps directions and mobile handoff support.",
+        impact: "Simplified dealership discovery and improved conversion from browsing to in-person visits.",
+        techStack: "Google Maps API, JavaScript, web services",
         alt: "Rallye Website" 
       },
       { type: "image", 
         src: "/images/live/altria.png", 
-        description: "(2009) Altria, a leader in the tobacco industry, partnered with us to create an employee training website for their Marlboro brand. I developed an interactive module that allowed onboarding to take place online, which included a quiz to test knowledge retention. This project helped Altria streamline their training process and ensure consistent messaging across their workforce.",
+        description: "(2009) Online onboarding and training website for Altria's Marlboro employee programs.",
+        solution: "Developed interactive training modules and embedded assessments to validate onboarding comprehension.",
+        impact: "Standardized training delivery and improved consistency of internal messaging across teams.",
+        techStack: "HTML, JavaScript, interactive learning modules, assessment logic",
         alt: "Altria Website" 
       }
     ]

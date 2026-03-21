@@ -7,9 +7,9 @@
     <h1>AnchorPoint Digital</h1>
     <p>
       <span class="pipe">•</span>
-      Full-Stack Web Development
+      Full-Stack Engineer
       <span class="pipe">•</span> 
-      Solutions Engineering
+      Building scalable media, analytics, and automation systems
     </p>
   </div>
 </header>

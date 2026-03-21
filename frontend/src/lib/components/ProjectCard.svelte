@@ -24,7 +24,12 @@
               <img src={item.src} alt={item.alt ?? ''} class="project-image image-tall" />
             {/if}
 
-            <p class="project-description">{item.description}</p>
+            <div class="project-details">
+              <p class="project-detail"><strong>Description:</strong> {item.description}</p>
+              <p class="project-detail"><strong>Solution:</strong> {item.solution}</p>
+              <p class="project-detail"><strong>Impact:</strong> {item.impact}</p>
+              <p class="project-detail"><strong>Tech Stack:</strong> {item.techStack}</p>
+            </div>
 
           </div>
         {/each}
